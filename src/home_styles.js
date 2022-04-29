@@ -10,7 +10,12 @@ export const Section = styled.section`
     margin:auto;
     padding: 0px 2rem 0 2rem;
     margin-bottom:5rem;
-    border-bottom:3px solid #000;
+    box-shadow:rgb(0 0 0 / 11%) 0px 0px 14px;
+    padding:30px
+    
+}
+
+
 }
 
 `

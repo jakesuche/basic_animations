@@ -7,12 +7,7 @@ export default function () {
         <div className="content">
           <h2>BASIC ANIMATIONS</h2>
           <p>Easy to understand basic css animations</p>
-          <div>
-          <input  type="" />
-          
-          </div>
         </div>
-        
       </Styles.Header>
       <Styles.Section>
         <div className="section-inner row">
@@ -30,18 +25,22 @@ export default function () {
               <div className="body">
                 <h5 className="title">Card title</h5>
                 <p className="text">
-                     Your weekly dose of CSS news. Delivered every monday to <strong>0</strong> devs, for free.
+                  Your weekly dose of CSS news. Delivered every monday to{" "}
+                  <strong>0</strong> devs, for free.
                 </p>
                 <div className="actions">
-                <input  type="" placeholder="Your Email" />
-                <a href="#" className="btn btn-primary">
-                  Shoot 😊
-                </a>
+                  <input type="" placeholder="Your Email" />
+                  <a href="#" className="btn btn-primary">
+                    Shoot 😊
+                  </a>
                 </div>
               </div>
             </Styles.Card>
-           
           </div>
+        </div>
+        <div className="px-3 search">
+        
+          <input placeholder="Search..." />
         </div>
       </Styles.Section>
     </div>

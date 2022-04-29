@@ -1,0 +1,10 @@
+.show-on-scroll{
+    filter:blur(20px);
+    transition:all 0.5s ease-in-out;
+}
+
+
+.show-on-scroll.is-visible{
+    filter:blur(0px);
+  }
+
