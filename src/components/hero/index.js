@@ -7,7 +7,12 @@ export default function () {
         <div className="content">
           <h2>BASIC ANIMATIONS</h2>
           <p>Easy to understand basic css animations</p>
+          <div>
+          <input  type="" />
+          
+          </div>
         </div>
+        
       </Styles.Header>
       <Styles.Section>
         <div className="section-inner row">
@@ -29,10 +34,9 @@ export default function () {
                 </p>
                 <div className="actions">
                 <input  type="" placeholder="Your Email" />
-                {/* <a href="#" className="btn btn-primary">
+                <a href="#" className="btn btn-primary">
                   Shoot
-                </a> */}
-                ;
+                </a>
                 </div>
               </div>
             </Styles.Card>

@@ -14,13 +14,31 @@ export const Header = styled.div`
   height: 250px;
   align-items: center;
   text-align: center;
-  margin:auto .content {
+  margin:auto; 
+  .content {
+      input{
+        display: block;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+      appearance: none;
+      border-radius: 0.25rem 0rem 0rem 0.25rem;
+      max-width: 300px;
+      border-radius: 0.6rem;
+      height: 50px;
+      border: none;
+      outline: none;
+      }
   }
 `;
 
 export const Section = styled.section`
   background-color: rgb(233, 255, 252);
-
   .section-inner {
     max-width: 1300px;
     margin: auto;

@@ -1,4 +1,3 @@
-
 import Hero from "./components/hero";
 import * as Styles from "./home_styles.js";
 
@@ -23,6 +22,13 @@ function App() {
             recipe below with inline comments. You can also find this example in
             the official React Hooks FAQ.
           </p>
+          <div>
+            <iframe
+              style={{ width: "100%", height: "500px" }}
+              src="https://codesandbox.io/embed/simple-accordion-demonstration-j7bucs"
+              title="W3Schools Free Online Web Tutorials"
+            />
+          </div>
         </div>
         <div className="section_content">
           <h3>Button animations</h3>
