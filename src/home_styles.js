@@ -9,7 +9,8 @@ export const Section = styled.section`
     max-width:1300px;
     margin:auto;
     padding: 0px 2rem 0 2rem;
-    margin-bottom:3rem;
+    margin-bottom:5rem;
+    border-bottom:3px solid #000;
 }
 
 `

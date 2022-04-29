@@ -35,7 +35,7 @@ export default function () {
                 <div className="actions">
                 <input  type="" placeholder="Your Email" />
                 <a href="#" className="btn btn-primary">
-                  Shoot
+                  Shoot 😊
                 </a>
                 </div>
               </div>
