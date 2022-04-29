@@ -32,6 +32,7 @@ export default function () {
                 {/* <a href="#" className="btn btn-primary">
                   Shoot
                 </a> */}
+                ;
                 </div>
               </div>
             </Styles.Card>
