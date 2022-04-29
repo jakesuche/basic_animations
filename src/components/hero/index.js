@@ -29,9 +29,9 @@ export default function () {
                 </p>
                 <div className="actions">
                 <input  type="" placeholder="Your Email" />
-                <a href="#" className="btn btn-primary">
+                {/* <a href="#" className="btn btn-primary">
                   Shoot
-                </a>
+                </a> */}
                 </div>
               </div>
             </Styles.Card>

@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+
 import Hero from "./components/hero";
 import * as Styles from "./home_styles.js";
 
