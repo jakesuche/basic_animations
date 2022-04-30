@@ -1,4 +1,4 @@
-<img src="basic.png" alt="" />
+<img src="./basic.png" alt="" />
 
 This is the repository for [basic animations](https://github.com/basic-animations.netlify.app), a [React](https://github.com/facebook/create-react-app) powered blog that publishes easy to understand css animation.
 
