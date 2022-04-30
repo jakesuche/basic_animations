@@ -8,6 +8,7 @@ export const Header = styled.div`
     #00e7eb 100%
   );
   background-color: #00d1b2;
+  position: relative;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -121,3 +122,49 @@ export const Card = styled.div`
     }
   }
 `;
+
+
+export const ZoomGroup = styled.div`
+    display:flex;
+    position: fixed;
+    top: 10px;
+    right:10px;
+    gap:5px;
+    z-index:1;
+    :hover{
+        ::before{
+        width:100%;
+        height:100%;
+        opacity:1
+        }
+    }
+    :before{
+        content:'zoom:${props => props.zoom}';
+        background-color:#fff;
+        box-shadow: rgb(0 0 0 / 11%) 0px 0px 14px;
+        position: absolute;
+        width:0%;
+        height:0%;
+        top: 40px;
+        right: 100%;
+        border-radius:10px;
+        line-height:auto;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        opacity: 0;
+        color:#000;
+       
+    }
+    button{
+        border:none;
+        padding:0.4rem 0.9rem;
+        background-color:#fff;
+        box-shadow: rgb(0 0 0 / 11%) 0px 0px 14px;
+        border-radius:5px;
+
+
+    }
+
+
+
+`

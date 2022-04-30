@@ -2,8 +2,13 @@ import Hero from "./components/hero";
 import * as Styles from "./home_styles.js";
 import { animations } from "./utils/constants";
 import React from "react";
+import Nodata from "./components/Nodata";
 import "./assets/css/onscroll.css";
 function App() {
+  const [inputvalue, setValue] = React.useState("");
+  const [animationlist, setAnimationList] = React.useState(animations);
+  const [zoom, setZoom] = React.useState(90)
+
   const isInViewPort = (el) => {
     var rect = el.getBoundingClientRect();
     return (
@@ -37,11 +42,35 @@ function App() {
     }
     loop();
   }, []);
+
+  
+
+  const SearchAnimation = (e) => {
+    const { value } = e.target;
+    setValue(value);
+    let results = animations.filter((animation) => {
+      return animation.title  && animation.title.toLowerCase().trim().includes(inputvalue.toLowerCase().trim()) || 
+        animation.content && animation.content.toLowerCase().trim().includes(inputvalue.toLowerCase().trim()) ||
+        animation.link && animation.link.toLowerCase().trim().includes(inputvalue.toLowerCase().trim())
+    });
+    if (inputvalue.trim().length > 1) {
+      setAnimationList(results);
+    } else {
+      setAnimationList(animations);
+    }
+  };
+
   return (
-    <div>
-      <Hero />
+    <div style={{
+      zoom:`${zoom}%`
+    }}>
+      <Hero zoom={zoom} setZoom={setZoom} onChange={SearchAnimation} value={inputvalue} />
       <Styles.Section>
-        {animations.map((animation, index) => {
+     
+      {
+        animationlist.length > 0 ? (
+          <>
+          {animationlist.map((animation, index) => {
           return (
             <div className="section_content" key={index}>
               <h3>{animation.title}</h3>
@@ -59,6 +88,12 @@ function App() {
             </div>
           );
         })}
+          </>
+        ) : (
+          <Nodata />
+        )
+      }
+        
       </Styles.Section>
     </div>
   );
