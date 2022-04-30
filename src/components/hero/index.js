@@ -8,8 +8,8 @@ export default function ({zoom, onChange, value, setZoom }) {
         const pageYOffset = typeof window !== "undefined" && window.pageYOffset
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
-        console.log(sticky)
-        if (window.pageYOffset >= sticky) {
+        
+        if (pageYOffset >= 600) {
         navbar.classList.add("sticky");
       } else {
         navbar.classList.remove("sticky");
@@ -91,7 +91,7 @@ export default function ({zoom, onChange, value, setZoom }) {
         </div>
       </Styles.Section>
       <style>
-          {/* {style} */}
+          {style}
       </style>
     </div>
   );
@@ -100,8 +100,14 @@ export default function ({zoom, onChange, value, setZoom }) {
 const style = `
 .sticky {
     position: fixed!important;
-    top: 0;
+    top: 30px;
     width: 100%;
+    transition: all 0.5s ease;
+
+  }
+  .sticky input{
+      max-width:1000px!important;
+      transition: all 0.5s ease;
   }
 
 `

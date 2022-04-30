@@ -52,6 +52,7 @@ export const Section = styled.section`
     left: 50%;
     transform:translateX(-50%);
     box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+    transition: all 0.5s ease;
     ::before{
         position:absolute;
         content:"sss";
