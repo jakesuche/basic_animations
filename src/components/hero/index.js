@@ -30,9 +30,14 @@ export default function ({zoom, onChange, value, setZoom }) {
             <i class="bi bi-dash-lg"></i>
             </button> 
         </Styles.ZoomGroup>
-        <div className="content">
-          <h1>BASIC ANIMATIONS</h1>
-          <p>Easy to understand basic css animations</p>
+        <div className="content d-flex  gap-2 ">
+            <div>
+            <h1>BASIC ANIMATIONS</h1>
+         
+             <p>Easy to understand basic css animations</p>
+            </div>
+          
+          <img style={{ width: 76, height:76}} src="logo.png" />
         </div>
       </Styles.Header>
       <Styles.Section>
