@@ -66,6 +66,7 @@ function App() {
     }}>
       <Hero zoom={zoom} setZoom={setZoom} onChange={SearchAnimation} value={inputvalue} />
       <Styles.Section>
+      
      
       {
         animationlist.length > 0 ? (

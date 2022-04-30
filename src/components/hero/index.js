@@ -3,7 +3,6 @@ import React from "react";
 
 export default function ({zoom, onChange, value, setZoom }) {
     const inputElement = React.useRef();
-
     const handleScroll = (e) => {
         const pageYOffset = typeof window !== "undefined" && window.pageYOffset
         var navbar = document.getElementById("navbar");
@@ -19,21 +18,6 @@ export default function ({zoom, onChange, value, setZoom }) {
   React.useEffect(() => {
 
     window.addEventListener("scroll",handleScroll)
-
-    // window.onscroll = function () {
-    //   myFunction();
-    // };
-    
-    // var sticky = inputElement.current.offsetTop;
-    // console.log(window.pageYOffset)
-
-    // function myFunction() {
-    //   if (window.pageYOffset >= sticky) {
-    //     inputElement.current.classList.add("sticky");
-    //   } else {
-    //     inputElement.current.classList.remove("sticky");
-    //   }
-    // }
   }, []);
   return (
     <div>
@@ -47,7 +31,7 @@ export default function ({zoom, onChange, value, setZoom }) {
             </button> 
         </Styles.ZoomGroup>
         <div className="content">
-          <h2>BASIC ANIMATIONS</h2>
+          <h1>BASIC ANIMATIONS</h1>
           <p>Easy to understand basic css animations</p>
         </div>
       </Styles.Header>

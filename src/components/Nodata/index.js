@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import empty from './Empty-pana.svg'
+import empty from "./Empty-pana.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,7 +14,9 @@ const Wrapper = styled.div`
 `;
 
 export default function () {
-  return <Wrapper>
+  return (
+    <Wrapper>
       <img src={empty} />
-  </Wrapper>;
+    </Wrapper>
+  );
 }

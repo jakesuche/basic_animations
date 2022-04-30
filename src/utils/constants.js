@@ -38,7 +38,19 @@ export const animations = [
         title:"Button hover effect",
         content:"scale on hover effect with border translate on hover list",
         link:"https://codesandbox.io/embed/button-hover-effect-6g3psw?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+    },
+    {
+        title:"Card Hover Effect",
+        content:"Translate to show another view",
+        link:"https://codesandbox.io/embed/simple-hover-effect-for-card-cnymey?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+    },
+
+    {
+        title:" Css Card Hover Effect",
+        content:"Translate to show another view",
+        link:"https://codesandbox.io/embed/css-card-hover-effects-5we22?fontsize=14&hidenavigation=1&theme=dark"
     }
+
 
 ]
 
